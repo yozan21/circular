@@ -1,5 +1,5 @@
 # Circular Motion
 
- Welcome to this fun site. Mouse pointer is recommended for good visual effects.
+Welcome to this fun site. Mouse pointer is recommended for good visual effects.
 
--Site link: [Live-site](https://yozan21.github.io/gravity/)
+-Site link: [Live-site](https://yozan21.github.io/circular/)
