@@ -11,7 +11,7 @@ const mouse = {
   y: innerHeight / 2,
 };
 
-const colors = ["#00bdff", "#4d39ce", "#088eff"];
+const colors = ["#06d6a0", "#073b4c", "#006494"];
 
 const gravity = 1;
 const friction = 0.95;
@@ -68,7 +68,7 @@ function init() {
   particles = [];
 
   for (let i = 0; i < 40; i++) {
-    const radius = Math.random() * 3 + 1;
+    const radius = Math.random() * 3 + 2;
     particles.push(
       new Particle(
         canvas.width / 2,

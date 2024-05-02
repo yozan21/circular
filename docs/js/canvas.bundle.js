@@ -112,7 +112,7 @@ var mouse = {
   x: innerWidth / 2,
   y: innerHeight / 2
 };
-var colors = ["#00bdff", "#4d39ce", "#088eff"];
+var colors = ["#06d6a0", "#073b4c", "#006494"];
 var gravity = 1;
 var friction = 0.95;
 
@@ -175,7 +175,7 @@ var particles;
 function init() {
   particles = [];
   for (var i = 0; i < 40; i++) {
-    var radius = Math.random() * 3 + 1;
+    var radius = Math.random() * 3 + 2;
     particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, Object(_utils__WEBPACK_IMPORTED_MODULE_0__["randomColor"])(colors)));
   }
 }
