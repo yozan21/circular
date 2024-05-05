@@ -11,10 +11,7 @@ const mouse = {
   y: innerHeight / 2,
 };
 
-const colors = ["#06d6a0", "#073b4c", "#006494"];
-
-const gravity = 1;
-const friction = 0.95;
+const colors = ["#2a9d8f", "#219ebc", "#264653"];
 
 // Event Listeners
 addEventListener("mousemove", (event) => {
@@ -36,7 +33,7 @@ class Particle {
     this.radius = radius;
     this.color = color;
     this.radian = Math.random() * Math.PI * 2;
-    this.velocity = Math.random() * 0.01 + 0.03; //0.05;
+    this.velocity = Math.random() * 0.02 + 0.02; //0.05;
     this.distanceFromCenter = randomIntFromRange(50, 120);
     this.lastMouse = { x: x, y: y };
   }
@@ -74,7 +71,7 @@ function init() {
         canvas.width / 2,
         canvas.height / 2,
         radius,
-        randomColor(colors)
+        randomColor(colors) //`hsl(${randomIntFromRange(0, 255)},50%, 50%)`
       )
     );
   }

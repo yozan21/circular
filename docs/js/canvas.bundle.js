@@ -112,9 +112,7 @@ var mouse = {
   x: innerWidth / 2,
   y: innerHeight / 2
 };
-var colors = ["#06d6a0", "#073b4c", "#006494"];
-var gravity = 1;
-var friction = 0.95;
+var colors = ["#2a9d8f", "#219ebc", "#264653"];
 
 // Event Listeners
 addEventListener("mousemove", function (event) {
@@ -135,7 +133,7 @@ var Particle = /*#__PURE__*/function () {
     this.radius = radius;
     this.color = color;
     this.radian = Math.random() * Math.PI * 2;
-    this.velocity = Math.random() * 0.01 + 0.03; //0.05;
+    this.velocity = Math.random() * 0.02 + 0.02; //0.05;
     this.distanceFromCenter = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["randomIntFromRange"])(50, 120);
     this.lastMouse = {
       x: x,
@@ -176,7 +174,8 @@ function init() {
   particles = [];
   for (var i = 0; i < 40; i++) {
     var radius = Math.random() * 3 + 2;
-    particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, Object(_utils__WEBPACK_IMPORTED_MODULE_0__["randomColor"])(colors)));
+    particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, Object(_utils__WEBPACK_IMPORTED_MODULE_0__["randomColor"])(colors) //`hsl(${randomIntFromRange(0, 255)},50%, 50%)`
+    ));
   }
 }
 
